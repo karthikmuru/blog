@@ -1,0 +1,94 @@
+.left, .right{
+  height : inherit;  
+}
+.row {
+ height : inherit;
+}
+.main {
+  height : inherit;
+}
+.left{
+  background-color : #313852;
+}
+.right{
+      overflow: scroll;
+      background-color : #56d1e2;
+}
+.masthead{
+  margin-top : 60px;
+  margin-bottom : 60px;
+  
+}
+.display{
+  
+  margin-bottom : 40px;
+  
+}
+.name-pic{
+  
+  margin : 0 auto;
+  color : white;
+  
+}
+.sidebar{
+  padding : 0px 40px;
+}
+.social{
+  padding : 0px 20px;
+}
+
+.name{
+  
+  color :white;
+  font-size : 30px;
+  
+}
+a:hover{
+  text-decoration: none;
+  color : grey;
+}
+a{
+  color : white;
+  margin : 10px;
+}
+
+.link{
+  color : white;
+  font-size : 15px;
+  margin-bottom : 10px;
+}
+.menu{
+  
+  margin-top : 20px;
+  
+}
+html, body{
+ 
+}
+
+body{
+  font-family:Georgia, Serif;
+}
+.board{
+  
+  margin : 40px;
+  background-color : white;
+  
+}
+.content{
+  
+  padding : 40px;
+  
+}
+.inputs{
+  
+  margin-top : 20px;
+  margin-bottom : 10px;
+  
+}
+
+@media only screen and (min-device-width: 480px) {
+    html, body {
+      height: 100%;
+  }
+}
