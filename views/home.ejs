@@ -22,18 +22,18 @@
                     <div class="name-pic text-center text">@SSN College of engineering</div>
                   </div>
                   <div class="social text-center">
-                    <a class="fa fa-github fa-3x" aria-hidden="true" href=""></a>
-                    <a class="fa fa-linkedin fa-3x" aria-hidden="true" href=""></a>
-                    <a class="fa fa-facebook fa-3x" aria-hidden="true" href=""></a>            
+                    <a class="fa fa-github fa-3x link" aria-hidden="true" href="https://github.com/karthikmuru"></a>
+                    <a class="fa fa-linkedin fa-3x link" aria-hidden="true" href="https://www.linkedin.com/in/karthik-murugesan-b967b2122"></a>
+                    <a class="fa fa-facebook fa-3x link" aria-hidden="true" href=""></a>            
                   </div>
               </div>
             </div>
             <div class="row menu text-center">
               <nav id="menunav">
-                  <div class="row link"><a href="/">HOME</a></div>
-                  <div class="row link"><a href="/about">ABOUT</a></div>
+                  <div class="row"><a class="link" href="/">HOME</a></div>
+                  <div class="row"><a class="link" href="/about">ABOUT</a></div>
                   <% if(auth){ %>
-                  <div class="row link"><a href="/logout">LOGOUT</a></div>
+                  <div class="row"><a class="link" href="/logout">LOGOUT</a></div>
                   <% } %>
               </nav>
             </div>
@@ -42,6 +42,5 @@
         <%- include(right) -%>
       </div>
     </div>
-    <script src="./scripts/async.js"></script>
   </body>
 </html>

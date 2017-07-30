@@ -5,6 +5,7 @@ var postSchema = new mongoose.Schema({
   id : Number, 
   author : String, 
   date : Date,
+  updated : Date,
   title : String,
   subtitle : String,
   content :String, 

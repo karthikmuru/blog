@@ -21,6 +21,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('view cache', false);
 app.use(express.static('./views'));
+app.use(express.static('./views/css'));
 app.use(bodyparser.urlencoded({extended : false}));
 
 app.use(passport.initialize());

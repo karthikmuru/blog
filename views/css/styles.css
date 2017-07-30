@@ -9,15 +9,17 @@
 }
 .left{
   background-color : #313852;
+  padding-top : 60px;
 }
 .right{
       overflow: scroll;
       background-color : #56d1e2;
 }
 .masthead{
-  margin-top : 60px;
   margin-bottom : 60px;
-  
+}
+.name{
+  font-size : 30px;
 }
 .display{
   
@@ -43,13 +45,9 @@
   font-size : 30px;
   
 }
-a:hover{
+.link:hover{
   text-decoration: none;
   color : grey;
-}
-a{
-  color : white;
-  margin : 10px;
 }
 
 .link{
@@ -92,3 +90,42 @@ body{
       height: 100%;
   }
 }
+
+.subtitle {
+  
+  font-size : 20px;
+  
+}
+.date {
+  
+  font-size : 21px;
+  margin-top : 20px;
+  
+}
+.fa{
+  
+  margin-left : 10px;
+  margin-right : 10px;
+  
+}
+.clamp{
+   
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 20;
+   -webkit-box-orient: vertical;
+  
+
+}
+
+.cread{
+  font-size : 18px;
+}
+
+.title-head{
+  
+  border-bottom : 1px solid;
+  
+}
+
