@@ -13,6 +13,7 @@ module.exports = function(app, passport){
         successRedirect : '/about', 
         failureRedirect : '/admin'
   }));
+  app.get('/article/:id', Blog.Article);
   
   app.get('/post', Blog.Post);
   app.post('/post', Blog.MakePost);

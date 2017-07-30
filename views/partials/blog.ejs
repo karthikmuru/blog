@@ -1,10 +1,13 @@
 <div class="right col-md-8">
-  
-  <% for(var i = 0;i < data.length();i++) {%>
-    
-  
-  
+  <% for(var i = data.leng;i >= 0;i--) { %>
+  <div class="board">
+    <div class="content">
+      <h1><%= data[i].title%></h1>
+      <p class="subtitle"><%- data[i].subtitle %></p>
+      <div class="clamp"><%- data[i].content %></div>
+      <p class="date"><%= data[i].date.toString().substring(0, 15) %></p><br>
+      <p class="cread"><a href="/article/<%= data[i]._id %>">Continue Reading &gt;</a></p>
+    </div>
+  </div>
   <% } %>
-  
-          
 </div>
