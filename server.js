@@ -1,13 +1,27 @@
 // server.js
 var express = require('express');
-var app = express();
 var passport = require('passport');
 var mongoose = require('mongoose');
+var bodyparser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var expressSession = require('express-session');
+var app = express();
+
+app.use(cookieParser());
+app.use(expressSession({
+    
+    secret: '123456789QWERTY',
+    resave: false,
+    saveUninitialized: false
+    
+}));
+
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('view cache', false);
 app.use(express.static('./views'));
+app.use(bodyparser.urlencoded({extended : false}));
 
 app.use(passport.initialize());
 app.use(passport.session()); 

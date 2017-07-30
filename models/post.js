@@ -2,11 +2,13 @@ var mongoose = require('mongoose');
 
 var postSchema = new mongoose.Schema({
   
+  id : Number, 
   author : String, 
   date : Date,
   title : String,
-  content :String
-  
+  subtitle : String,
+  content :String, 
+  tags : String
 });
 
 

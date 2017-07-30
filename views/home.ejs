@@ -2,7 +2,7 @@
   <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css"  href="css/styles.css">
     <script src="https://use.fontawesome.com/809eed050a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -30,8 +30,11 @@
             </div>
             <div class="row menu text-center">
               <nav id="menunav">
-                  <div class="row link"><a  href="/">HOME</a></div>
-                  <div class="row link"><a  href="/about">ABOUT</a></div>
+                  <div class="row link"><a href="/">HOME</a></div>
+                  <div class="row link"><a href="/about">ABOUT</a></div>
+                  <% if(auth){ %>
+                  <div class="row link"><a href="/logout">LOGOUT</a></div>
+                  <% } %>
               </nav>
             </div>
           </div>
