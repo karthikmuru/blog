@@ -1,9 +1,44 @@
 <html>
   <head>
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/809eed050a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  <body>
-    
-    
+  <body class=" visible-desktop">
+    <div class="main">
+      <div class="row">
+        <div class="left col-md-4">
+          <div class="sidebar">
+            <div class="row masthead text-center">
+              <a class="name text" href="/">Karthik's Blog</a>
+            </div>
+            <div class="row collapse navbar-collapse" id="navbarCollapse">
+              <div class="base text center">
+                  <div class="display text-center">
+                    <img style="border-radius: 1000px; width:15em" src="https://cdn.glitch.com/744c03d5-2d0a-4505-9115-4d55e3924e3a%2FIMG_1799.JPG?1501242746689" pagespeed_url_hash="877498429" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0">
+                    <div class="name-pic text-center text">Student and Coder</div >
+                    <div class="name-pic text-center text">@SSN College of engineering</div>
+                  </div>
+                  <div class="social text-center">
+                    <a class="fa fa-github fa-3x" aria-hidden="true" href=""></a>
+                    <a class="fa fa-linkedin fa-3x" aria-hidden="true" href=""></a>
+                    <a class="fa fa-facebook fa-3x" aria-hidden="true" href=""></a>            
+                  </div>
+              </div>
+            </div>
+            <div class="row menu text-center">
+              <nav id="menunav">
+                  <div class="row link"><a  href="/">HOME</a></div>
+                  <div class="row link"><a  href="/about">ABOUT</a></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <%- include(right) -%>
+      </div>
+    </div>
+    <script src="./scripts/async.js"></script>
   </body>
 </html>
