@@ -54,7 +54,7 @@ module.exports = function(passport){
       
       User.findOne({username : username}, function(err, data){
         
-        //console.log(data.password);
+        console.log(data.password);
         //console.log(decrypt(process.env.KEY, data.password));
         if(err) done(false);
         if(!data) done(null, false);

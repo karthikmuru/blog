@@ -18,10 +18,10 @@ module.exports = function(app, passport){
   app.get('/post', Blog.Post);
   app.post('/post', Blog.MakePost);
   
-  app.get('edit/:id', Blog.Edit);
+  app.get('/edit/:id', Blog.Edit);
   app.post('/edit/:id', Blog.MakeEdit);
 
-  app.post('/delete/:id', Blog.Delete);  
+  app.get('/delete/:id', Blog.Delete);  
 
   app.get('/logout', Blog.Logout);
 };

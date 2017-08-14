@@ -8,6 +8,11 @@
       </div>
       <br><br>
       <%- data.content %>
+      <p class="date"><%= data.date.toString().substring(0, 15) %></p><br>
+      <% if(auth){ %>
+      <p class="cread"><a href="/edit/<%= data._id %>">Edit &gt;</a></p>
+      <p class="cread"><a href="/delete/<%= data._id %>">Delete &gt;</a></p>
+      <% } %>
     </div>
   </div>    
 </div>

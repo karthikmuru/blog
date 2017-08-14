@@ -12,7 +12,7 @@
         <div class="left col-md-4">
           <div class="sidebar">
             <div class="row masthead text-center">
-              <a class="name text" href="/">Karthik's Blog</a>
+              <a class="name text link" href="/">Karthik's Blog</a>
             </div>
             <div class="row collapse navbar-collapse" id="navbarCollapse">
               <div class="base text center">
@@ -22,18 +22,19 @@
                     <div class="name-pic text-center text">@SSN College of engineering</div>
                   </div>
                   <div class="social text-center">
-                    <a class="fa fa-github fa-3x link" aria-hidden="true" href="https://github.com/karthikmuru"></a>
-                    <a class="fa fa-linkedin fa-3x link" aria-hidden="true" href="https://www.linkedin.com/in/karthik-murugesan-b967b2122"></a>
-                    <a class="fa fa-facebook fa-3x link" aria-hidden="true" href=""></a>            
+                    <a class="fa fa-github fa-3x social-icon" aria-hidden="true" href="https://github.com/karthikmuru"></a>
+                    <a class="fa fa-linkedin fa-3x social-icon" aria-hidden="true" href="https://www.linkedin.com/in/karthik-murugesan-b967b2122"></a>
+                    <a class="fa fa-facebook fa-3x social-icon" aria-hidden="true" href=""></a>            
                   </div>
               </div>
             </div>
-            <div class="row menu text-center">
+            <div class="row social text-center">
               <nav id="menunav">
-                  <div class="row"><a class="link" href="/">HOME</a></div>
-                  <div class="row"><a class="link" href="/about">ABOUT</a></div>
+                  <div class="row menu-item"><a class="link" href="/">HOME</a></div>
+                  <div class="row menu-item"><a class="link" href="/about">ABOUT</a></div>
                   <% if(auth){ %>
-                  <div class="row"><a class="link" href="/logout">LOGOUT</a></div>
+                  <div class="row menu-item"><a class="link" href="/post">POST</a></div>
+                  <div class="row menu-item"><a class="link" href="/logout">LOGOUT</a></div>
                   <% } %>
               </nav>
             </div>
